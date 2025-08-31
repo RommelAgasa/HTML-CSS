@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Rescue</title>
+    <link rel="icon" href="assets/icons/pets.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="login-register-bg">
+        <div class="login-register">
+            <p>Login/Register <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+    </div>
+
+    <div class="topnav">
+        <div class="logo">
+            <img src="assets/icons/logo.png" height="70px" width="200px" alt="animal logo">
+        </div>
+        <div class="menu-link">
+            <div class="selected">
+                <div class="active"></div>
+            </div>
+            <ul>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#foster">Foster</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#event">Events</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="donate">
+            <button class="button">Donate</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li>I love my pet charm bracelet</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <div class="fakeImageSelect">
+                    <h1 style="font-size: 100px;"><i class="fa-solid fa-image"></i></h1>
+                </div>
+                <div class="col-images">
+                    <div class="fakeImage">
+                        <h1><i class="fa-solid fa-image"></i></h1>
+                    </div>
+                    <div class="fakeImage">
+                        <h1><i class="fa-solid fa-image"></i></h1>
+                    </div>
+                    <div class="fakeImage">
+                        <h1><i class="fa-solid fa-image"></i></h1>
+                    </div>
+                    <div class="fakeImage">
+                        <h1><i class="fa-solid fa-image"></i></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-right">
+                <p>Jewelry</p>
+                <h1>I Love My Pet Charm Bracelet</h1>
+                <div style="display: flex; gap: 20px">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    5 reviews
+                </div>
+                <h1>&#36; 25</h1>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p>Bracelet animal</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('Animal')" class="btndropdown" id="dropdownBtnAnimal">
+                            Select <span style="margin-left: 20px;"><i class="fa-solid fa-circle-chevron-down"></i></span>
+                        </button>
+                        <div class="dropdown-content" id="dropdownMenuAnimal">
+                            <a onclick="selectItem('Animal', 'Dog')" href="#dog">Dog</a>
+                            <a onclick="selectItem('Animal', 'Cat')" href="#cat">Cat</a>
+                            <a onclick="selectItem('Animal', 'Hamster')" href="#hamster">Hamster</a>
+                            <a onclick="selectItem('Animal', 'Birds')" href="#birds">Birds</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <br>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p>Color</p>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('Color')" class="btndropdown" id="dropdownBtnColor">
+                            Select <span style="margin-left: 20px;"><i class="fa-solid fa-circle-chevron-down"></i></span>
+                        </button>
+                        <div class="dropdown-content" id="dropdownMenuColor">
+                            <a onclick="selectItem('Color', 'Blue')" href="#blue">Blue</a>
+                            <a onclick="selectItem('Color', 'Green')" href="#green">Green</a>
+                            <a onclick="selectItem('Color', 'Brown')" href="#brown">Brown</a>
+                            <a onclick="selectItem('Color', 'Red')" href="#red">Red</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div style="display: flex; flex-direction: row;justify-content: flex-start; margin-top: 20px;">
+                    <div style="width: 50%;">
+                        <strong>Availability:</strong> <span style="margin-left: 15px;">10 in stock</span>
+                    </div>
+                    <div style="width: 50%;">
+                        <strong>SKU:</strong> <span style="margin-left: 15px;">ILMPT-C</span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;justify-content: flex-start; margin-top: 30px;">
+                    <div class="next">
+                        <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                        <div class="counter">1</div>
+                        <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row;justify-content: flex-start; margin-top: 30px;">
+                    <h3 style="text-transform: uppercase;">Share on:</h3>
+                    <ul class="shareon">
+                        <li><a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-desc">
+        <div class="col-left" style="flex-direction: column;">
+            <div class="tab">
+                <ul>
+                    <li>Description</li>
+                    <li style="color: rgb(118, 117, 117);">Reviews(5)</li>
+                </ul>
+            </div>
+            <div class="tab-active"></div>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Reiciendis qui repellendus quae culpa, 
+                    fugiat facilis dolorem ab nisi architecto eaque facere porro 
+                    enim ipsam excepturi corrupti pariatur officia laudantium tenetur!
+                </p>
+                <div>
+                    <p>Product Details</p>
+                    <ul>
+                        <li>Exclusive handmade</li>
+                        <li>Antique gold charms</li>
+                        <li>Semi precious round smooth gemstone</li>
+                        <li>8mm breads</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-right">
+            <h3 style="margin-top: 0px;"><strong>Additional Information</strong></h3>
+            <div><strong>DIMENSIONS</strong></div>
+            <p>3X3X3</p>
+            <div style="margin-top: 20px;"><strong>WEIGHT</strong></div>
+            <p>0.75 lbs</p>
+        </div>
+    </div>
+
+    <div class="product-items">
+        <div class="header">You may also like</div>
+        <div class="items">
+            <div class="item">
+                <h1 class="fakeItem"><i class="fa-solid fa-image"></i></h1>
+                <div>
+                    <p><strong>"Beast" Unisex Tank</strong></p>
+                    <p><strong>&#36;20</strong></p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="item">
+                <h1 class="fakeItem"><i class="fa-solid fa-image"></i></h1>
+                <div>
+                    <p><strong>Best Friend Bracelet</strong></p>
+                    <p><strong>&#36;25</strong></p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="item">
+                <h1 class="fakeItem"><i class="fa-solid fa-image"></i></h1>
+                <div>
+                    <p><strong>Heart Shaped Pendant Necklace</strong></p>
+                    <p><strong>&#36;39</strong></p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="item">
+                <h1 class="fakeItem"><i class="fa-solid fa-image"></i></h1>
+                <div>
+                    <p><strong>"Beast" Unisex Tank</strong></p>
+                    <p><strong>&#36;20</strong></p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="item">
+                <h1 class="fakeItem"><i class="fa-solid fa-image"></i></h1>
+                <div>
+                    <p><strong>Bangles</strong></p>
+                    <p><strong>&#36;79+</strong></p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="item">
+                <h1 class="fakeItem"><i class="fa-solid fa-image"></i></h1>
+                <div>
+                    <p><strong>"Beast" Unisex Tank</strong></p>
+                    <p><strong>&#36;20</strong></p>
+                </div>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <div id="contact" class="col" style="flex:0 1 40%;">
+                <div class="logo-footer">
+                    <img src="assets/icons/logo.png" height="70px" width="200px" alt="animal logo">
+                </div>
+                <p style="line-height: 1.8;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ratione quidem illo est aspernatur numquam, libero 
+                    laborum eos totam harum tenetur natus nisi fugiat 
+                    modi deleniti explicabo aliquam vel veniam 
+                    exercitationem!
+                </p>
+                <div class="form-group">
+                    <input type="text">
+                    <button><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="footer-nav-links">
+                <div class="col">
+                    <h3>Adopt</h3>
+                    <ul>
+                        <li><a href="#">Our Adoptable Pets</a></li>
+                        <li><a href="#">Adoption Application</a></li>
+                        <li><a href="#">Adoption Fees</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Foster</h3>
+                    <ul>
+                        <li><a href="#">Our Fosterable Pets</a></li>
+                        <li><a href="#">About Fostering</a></li>
+                        <li><a href="#">Application</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">About AMA</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">My Cart</a></li>
+                        <li><a href="#">Login/Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer2">
+            <p>Copyright 2019. All right reserved.</p>
+        </div>  
+    </div>
+</body>
+
+<script>
+    function toggleDropdown(type) {
+        let menu = document.getElementById("dropdownMenu" + type);
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    function selectItem(type, value) {
+        document.getElementById("dropdownBtn" + type).innerHTML = value +
+            '<span style="margin-left: 20px;"><i class="fa-solid fa-circle-chevron-down"></i></span>';
+        document.getElementById("dropdownMenu" + type).style.display = "none";
+    }
+
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", function(event) {
+        let dropdowns = document.querySelectorAll(".dropdown-content");
+        dropdowns.forEach(function(dropdown) {
+            let btnId = dropdown.id.replace("Menu", "Btn");
+            let button = document.getElementById(btnId);
+
+            if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+                dropdown.style.display = "none";
+            }
+        });
+    });
+
+</script>
+</html>

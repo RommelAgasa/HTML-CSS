@@ -1,0 +1,573 @@
+* {
+    box-sizing: border-box;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+body {
+    font-family: 'Onest', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login / Register */
+.login-register-bg{
+    background-color: #adacac;
+    padding: 0px 100px;
+}
+
+.login-register{
+    text-align: end;
+    padding: 0.5px 0px 0.5px 0px;
+}
+
+.login-register span{
+    margin-left: 50px;
+}
+
+/* Top Nav */
+.topnav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #dbdbdb;
+    padding: 0px 100px;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 60px;
+}
+
+.topnav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li a{
+    color:  black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 18px;
+    margin-left: 10px;
+}
+
+.donate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    width: 150px;
+    padding: 15px;
+    color: white;
+    background-color: #858484;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+
+.main-content{
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.breadcrumb{
+    margin-bottom: 30px;
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.breadcrumb ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb li {
+    margin: 0 5px;
+    position: relative;
+}
+
+.breadcrumb li+li::before {
+    content: ">";
+    margin-right: 5px;
+    color: #555; /* kulay ng separator */
+}
+
+.main-content .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* col-left */
+.col-left{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fakeImageSelect{
+    display: block;
+    background-color: #dad3d3;
+    height: 580px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-images{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.fakeImage{
+    display: block;
+    background-color: #dad3d3;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* col-right */
+.col-right{
+    width: 50%;
+    padding-left: 10px;
+    line-height: 1.8;
+}
+
+.col-right p{
+    margin: 0;
+    padding: 0;
+}
+
+/* DropDown */
+/* Generic button style (applies to both Animal & Color dropdowns) */
+.btndropdown {
+    padding: 5px;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Common dropdown container */
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+}
+
+/* Common dropdown links */
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 3px 16px;
+    text-align: left;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Divider */
+.divider{
+    height: 2px;
+    background-color: #858484;
+    margin: 0px;
+}
+
+.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid #cbc8c8;
+    background-color: #cbc8c8;
+    margin-right: 40px;
+}
+
+.next .minus,
+.next .plus,
+.counter{
+    display: block;
+    padding: 10px;
+}
+
+.next .minus,
+.next .plus{
+    cursor: pointer;
+}
+
+.counter{
+    text-align: center;
+    background-color: white;
+    width:40px;
+}
+
+.shareon{
+    display: flex; 
+    flex-direction: row; 
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.shareon li{
+    display: block;
+    padding: 0px 16px;
+}
+.shareon li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Product Description */
+.product-desc{
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.product-desc .tab ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    margin: 0px;
+    gap: 70px;
+}
+
+.tab ul li{
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tab-active {
+    display: block;
+    margin: 10px 10px 10px 0px;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, black 20%, #9b9898 20%);
+}
+
+.product-desc .col-left{
+    width: 70%;
+}
+
+.product-desc .col-right{
+    width: 30%;
+}
+
+.product-desc .col-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-desc .col-right div{
+    margin-bottom: 10px;
+}
+
+.tab-content{
+    width: 80%;
+}
+
+.tab-content p{
+    line-height: 1.8;
+}
+
+.tab-content ul{
+    line-height: 1.8;
+}
+
+.product-desc .col-right div{
+    font-size: 12px;
+}
+
+/* You may also like */
+.product-items{
+    margin-top: 80px;
+}
+
+.product-items .header{
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.product-items .items{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.fakeItem{
+    display: block;
+    background-color: #dad3d3;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item h1{
+    margin: 0;
+}
+
+.item div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .stars{
+    justify-content: flex-start;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: #dad3d3;
+    padding-top: 100px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.footer .footer1{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 100px;
+}
+
+.footer .logo-footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.form-group {
+    margin: 40px 0;
+    padding: 0;
+    border: 1px solid black;
+    display: flex;         /* Para dikit */
+    align-items: stretch;  /* Pantay taas */
+}
+
+.form-group input[type=text] {
+    padding: 15px;
+    width: 70%;
+    margin: 0;
+    border: none;          /* Optional, para seamless */
+    outline: none;
+}
+
+.form-group button {
+    padding: 15px;
+    width: 30%;            /* Adjust mo kung anong size gusto mo */
+    margin: 0;
+    cursor: pointer;
+    background-color: #858484;
+    color: white;
+    border: none;          /* Para walang guhit sa pagitan */
+}
+
+.form-group button:hover{
+    background-color: #7d7b7b;
+}
+
+
+.footer .footer-nav-links{
+    display: flex; 
+    justify-content: stretch; 
+    flex: 1; 
+    flex-wrap: wrap; 
+    padding-left: 100px;
+    line-height: 1.9;
+    gap: 50px;
+}
+
+.footer .footer2{
+    padding: 10px 100px;
+}
+
+.footer1 .col ul{
+    list-style-type: none;
+    margin: 0px;
+    line-height: 1.9;
+    padding: 0px;
+}
+
+.footer1 .col ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer1 .col{
+    text-align: start;
+}
+
+
+
+/* ========== Responsive Breakpoints ========== */
+
+/* ====== Large Screens (≤1500px) ====== */
+@media screen and (max-width: 1500px) {
+    .menu-link {
+        margin: 0;
+    }
+
+    .topnav {
+        padding: 0 30px;
+    }
+
+    .col-left {
+        justify-content: center;
+    }
+
+    .col-images {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+}
+
+/* ====== Medium-Large Screens (≤1250px) ====== */
+@media screen and (max-width: 1250px) {
+    .col-images {
+        display: none;
+    }
+
+    .fakeImageSelect {
+        margin: 20px;
+    }
+}
+
+/* ====== Tablets / Small Laptops (≤1000px) ====== */
+@media screen and (max-width: 1000px) {
+    .topnav {
+        padding: 0;
+    }
+
+    .login-register-bg {
+        padding: 0 50px;
+    }
+
+    .main-content .row {
+        flex-direction: column;
+    }
+
+    .col-left,
+    .col-right {
+        width: 100%;
+    }
+
+    .fakeImageSelect {
+        height: 200px;
+    }
+
+    .fakeImageSelect h1 {
+        font-size: 11px;
+    }
+
+    .main-content,
+    .product-desc {
+        padding: 0 50px;
+    }
+
+    /* Gradient line/tab */
+    .tab-active {
+        background: linear-gradient(to right, black 50%, #9b9898 50%);
+    }
+
+    .footer .footer-nav-links {
+        gap: 10px;
+    }
+}
+
+/* ====== Mobile (≤600px) ====== */
+@media screen and (max-width: 600px) {
+    .product-desc {
+        flex-direction: column;
+    }
+
+    .product-desc .col-left,
+    .product-desc .col-right {
+        width: 100%;
+    }
+
+    .tab-active {
+        background: linear-gradient(to right, black 50%, #9b9898 50%);
+    }
+
+    .footer .footer1 {
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+    .footer .footer1 .col {
+        max-width: 100%;
+    }
+
+    .footer .footer-nav-links {
+        padding: 0;
+        line-height: 0.8;
+        flex-direction: column;
+    }
+
+    .footer .footer-nav-links .col {
+        text-align: center;
+    }
+}
+
+/* ====== Extra Small Devices (≤300px) ====== */
+@media screen and (max-width: 300px) {
+    body {
+        padding: 0;
+    }
+}
