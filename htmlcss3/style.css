@@ -3,7 +3,7 @@
 }
 
 .border{
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 body{
@@ -118,6 +118,12 @@ body{
     background-color: white;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.title-section button:hover{
+    background-color: #DACC96;
+    color: white;
 }
 
 /* Category */
@@ -125,7 +131,7 @@ body{
     margin: 0px;
     padding: 0px;
     padding: 10px 70px;
-    background-color: bisque;
+    background-color: #DACC96;
     overflow: hidden;
 }
 
@@ -139,7 +145,7 @@ body{
 .category img{
     width: 50px;
     height: 50px;
-    background-color: bisque;
+    background-color: #DACC96;
 }
 
 .category ul li{
@@ -148,6 +154,130 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+
+/* Special Coffee & Desserts */
+.coffee-dessert{
+    padding: 10px 80px;
+}
+
+.coffee-dessert .special-coffee{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coffee-dessert h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.card{
+    background-color: rgb(247, 245, 243);
+    margin: 10px;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.card .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-dessert .item{
+    max-width: 600px;
+    max-height: 400px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.card .card-title{
+    font-size: 12px;
+}
+
+.card .card-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+/* Call to Action */
+.call-to-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px 80px;
+    margin-top: 30px;
+    background-color: #DACC96;
+    gap: 60px;
+    overflow: hidden;
+}
+
+.call-to-action h1{
+    font-size: 50px;
+    margin: 0; padding: 0;
+}
+
+.call-to-action > div{
+    align-items: center;
+    padding: 10px;
+}
+
+.call-to-action .img-left img{
+    width: 300px;
+    height: 200px;
+}
+
+.call-to-action .img-right img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Reviews */
+.review{
+    padding: 50px 80px;
+}
+
+.title-review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review h1, .review h2{
+    margin: 0;
+    padding: 0;
+}
+
+.review h1{
+    text-transform: uppercase;
+}
+
+.review h2{
+    font-family: 'Lavishly Yours';
+    font-size: 50px;
 }
 
 
@@ -187,6 +317,33 @@ body{
     .category img{
         width: 30px;
         height: 30px;
+    }
+
+    .special-coffee{
+        overflow-x: auto;
+    }
+
+    .call-to-action{
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .call-to-action h1{
+        font-size: 20px;
+    }
+
+    .call-to-action .img-left img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .call-to-action .img-right img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .call-to-action .button{
+        height: 40px;
     }
 }
 
@@ -251,5 +408,28 @@ body{
     .category img{
         width: 30px;
         height: 30px;
+    }
+
+    .coffee-dessert{
+        padding: 10px 40px;
+    }
+
+    .call-to-action{
+        padding: 0;
+    }
+
+    .call-to-action .button{
+        font-size: 10px;
+        padding: 0px 10px;
+        height: 30px;
+    }
+
+    .call-to-action .img-right img{
+        width: 100px;
+        height: 100px;
+    }
+
+     .call-to-action .img-left img{
+        display: none;
     }
 }
