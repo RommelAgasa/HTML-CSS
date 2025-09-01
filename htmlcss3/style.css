@@ -177,7 +177,7 @@ body{
 }
 
 .card{
-    background-color: rgb(247, 245, 243);
+    background-color: #FFF0CE;
     margin: 10px;
     padding: 15px 10px;
     border-radius: 10px;
@@ -212,7 +212,7 @@ body{
     border: none;
     padding: 0px 20px;
     border-radius: 10px;
-    height: 50px;
+    height: 45px;
     cursor: pointer;
 }
 
@@ -255,30 +255,109 @@ body{
     height: 200px;
 }
 
-/* Reviews */
-.review{
+/* Testimonial */
+.testimonial{
     padding: 50px 80px;
 }
 
-.title-review{
+.title-testimonial{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.review h1, .review h2{
+.testimonial h1, .testimonial h2{
     margin: 0;
     padding: 0;
 }
 
-.review h1{
+.testimonial h1{
     text-transform: uppercase;
 }
 
-.review h2{
+.testimonial h2{
     font-family: 'Lavishly Yours';
     font-size: 50px;
 }
+
+.customer-testimonial{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.card-testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: 3px solid #DACC96;
+}
+
+.card-testimonial .card-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.customer-test{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.card-testimonial .customer{
+    line-height: .5;
+    padding: 10px;
+}
+
+.card-testimonial .stars{
+    display: flex;
+    justify-content: end;
+    color: goldenrod;
+}
+
+.card-testimonial .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+/* Join Us */
+
+.subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DACC96;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+
+.subscribe input[type=text]{
+    width: 250px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+}
+
+.subscribe img{
+    padding: 0;
+    margin: 0;
+}
+
+
+#joinus > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 
 /* Responsive ----------------------------------------------------- */
@@ -345,6 +424,26 @@ body{
     .call-to-action .button{
         height: 40px;
     }
+
+    .card-testimonial .customer{
+        padding: 10px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .joinus_imgR{
+        display: none;
+    }
+
+    .joinus_imgL img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .subscribe .joinus .button{
+        margin-top: 10px;
+    }
+
 }
 
 @media screen and (max-width: 600px){
@@ -431,5 +530,57 @@ body{
 
      .call-to-action .img-left img{
         display: none;
+    }
+
+    .testimonial{
+        padding: 50px 20px;
+    }
+    
+    .title-testimonial h1{
+        font-size: 20px;
+    }
+
+    .customer-testimonial{
+        justify-content: start;
+    }
+
+    .card-testimonial .card-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-testimonial .card p{
+        width: 200px;
+    }
+
+    .card-testimonial .customer{
+        padding: 10px;
+        line-height: 0;
+        text-align: start;
+    }
+    
+    .card-testimonial .stars{
+        margin-top: 10px;
+    }
+
+    .joinus_imgL{
+        display: none;
+    }
+
+    .subscribe{
+        padding: 10px;
+        justify-content: center;
+    }
+
+     .subscribe .joinus{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-container{
+        justify-content: center;
     }
 }
