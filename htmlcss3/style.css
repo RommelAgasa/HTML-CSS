@@ -207,7 +207,7 @@ body{
 }
 
 .button {
-    background-color: black;
+    background-color: #361500;
     color: white;
     border: none;
     padding: 0px 20px;
@@ -218,7 +218,7 @@ body{
 
 .button:hover{
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #361500;
     color: black;
 }
 
@@ -336,6 +336,7 @@ body{
     background-color: #DACC96;
     margin-top: 20px;
     padding: 0px 0px;
+    margin-bottom: 0px;
 }
 
 .subscribe input[type=text]{
@@ -351,13 +352,52 @@ body{
     margin: 0;
 }
 
-
 #joinus > div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+/* Footer */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #361500;
+    padding: 50px 0px;
+}
+
+.footer > div{
+    align-items: center;
+    color: white;
+    line-height: 2;
+}
+
+.footer h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-media ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
 
 
 /* Responsive ----------------------------------------------------- */
@@ -444,10 +484,12 @@ body{
         margin-top: 10px;
     }
 
+    .footer{
+        padding: 50px 20px;
+    }
 }
 
 @media screen and (max-width: 600px){
-
     
     .nav-links{
         padding: 0;
@@ -583,4 +625,36 @@ body{
     .btn-container{
         justify-content: center;
     }
+
+    .footer{
+        padding: 50px 20px;
+    }
+
+    .footer > div{
+        width: 50%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:300px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul{
+        align-content: center;
+    }
+
+    .footer{
+        padding: 50px 0px;
+    }
+
+    .footer > div{
+        width: 100%;
+    }
+
 }
